@@ -8,7 +8,7 @@ I tested whether architectural factorization enables compositional generalizatio
 - Factorized architecture: 100% train accuracy, 100% test accuracy on novel compositions
 - Effect size: d = 12.65
 - Effect is robust across holdout sizes and scales to 3-factor domains
-- Partial factorization yields unstable, not partial, composition
+- **Key finding**: Partial factorization yields unstable, not partial, composition — suggesting compositionality may be closer to a phase transition than a gradient
 
 This supports the claim that factorized representations enable composition, while holistic compression enables only memorization.
 
@@ -91,7 +91,7 @@ Holdout: 12 (25%)
 
 The factorized model achieves perfect generalization with zero variance. The holistic model is unreliable (33-92% across runs).
 
-### Study 3: Partial Factorization
+### Study 3: Partial Factorization — The Surprising Result
 
 Is compositionality binary or graded?
 
@@ -102,9 +102,11 @@ Is compositionality binary or graded?
 | 50% shared | 70.0% ± 33.2% |
 | 100% (fully holistic) | 15.0% ± 22.9% |
 
-The relationship is non-monotonic. Key finding: partial factorization doesn't yield partial composition — it yields unstable composition. Once the architecture can encode holistically, it sometimes will, destroying reliable generalization.
+The relationship is non-monotonic. **Key finding**: partial factorization doesn't yield partial composition — it yields unstable composition. Once the architecture can encode holistically, it sometimes will, destroying reliable generalization.
 
-This suggests compositionality may be closer to binary than graded.
+This suggests compositionality may be closer to a **phase transition** than a gradient. You either have it or you don't. Architectures that permit holistic encoding will exploit it, even when factorized pathways exist.
+
+If this holds more generally, it has implications for architecture design: you can't get "a little bit" of compositionality by adding "a little bit" of factorization pressure. The system needs to be structurally prevented from taking holistic shortcuts.
 
 ## Interpretation
 
@@ -124,10 +126,16 @@ This suggests compositionality may be closer to binary than graded.
 
 Current LLMs are holistic encoders. They can memorize vast amounts of compositional structure from training data, achieving apparent compositional ability. But if this analysis is correct, they are not genuinely composing — they are pattern-matching over memorized compositions.
 
+The instability of partial factorization suggests that LLMs' apparent compositional ability may be brittle — reliable when interpolating within the distribution of compositions they've seen, unreliable at the edges of their training distribution.
+
 This predicts:
 - LLMs should fail on truly novel compositions (not seen in training)
 - Scaling parameters should not fundamentally solve this (you can memorize more, but not compose)
 - Architectural changes (not just scale) are needed for genuine composition
+
+**Anticipated objection**: "But LLMs do compose novel sentences all the time."
+
+**Response**: They compose within the distribution of compositions they've seen. The question is whether they can compose *structurally* novel combinations — combinations that follow rules they've learned but instantiate patterns they've never encountered. The evidence from compositional generalization benchmarks (Lake & Baroni, 2018; Keysers et al., 2020) suggests they can't reliably. This experiment offers a mechanistic explanation: without architectural factorization, composition is unstable.
 
 ## Limitations
 
@@ -143,10 +151,11 @@ Available at: https://github.com/HillaryDanan/compositional-abstraction
 ## References
 
 - Lake, B. & Baroni, M. (2018). Generalization without systematicity: On the compositional skills of sequence-to-sequence recurrent networks. ICML.
+- Keysers, C., et al. (2020). Measuring compositional generalization: A comprehensive method on realistic data. ICLR.
 - Andreas, J., Rohrbach, M., Darrell, T., & Klein, D. (2016). Neural module networks. CVPR.
 - Locatello, F., et al. (2019). Challenging common assumptions in the unsupervised learning of disentangled representations. ICML.
-- Higgins, I., et al. (2017). β-VAE: Learning basic visual concepts with a constrained variational framework. ICLR.
+- Higgins, I., et al. (2017). beta-VAE: Learning basic visual concepts with a constrained variational framework. ICLR.
 
 ## Acknowledgments
 
-This work tests predictions from the Abstraction Primitive Hypothesis framework. See: https://github.com/HillaryDanan/abstraction-intelligence
+This work tests predictions from the Abstraction Primitive Hypothesis framework. See: https://github.com/HillaryDanan/Abstraction-Intelligence
