@@ -1,0 +1,1139 @@
+{
+  "meta": {
+    "timestamp": "2025-12-09T03:09:51.977750",
+    "holdout": [
+      [
+        "blue",
+        "triangle"
+      ],
+      [
+        "green",
+        "circle"
+      ]
+    ],
+    "train_compositions": [
+      [
+        "red",
+        "circle"
+      ],
+      [
+        "red",
+        "square"
+      ],
+      [
+        "red",
+        "triangle"
+      ],
+      [
+        "blue",
+        "circle"
+      ],
+      [
+        "blue",
+        "square"
+      ],
+      [
+        "green",
+        "square"
+      ],
+      [
+        "green",
+        "triangle"
+      ]
+    ],
+    "test_compositions": [
+      [
+        "blue",
+        "triangle"
+      ],
+      [
+        "green",
+        "circle"
+      ]
+    ],
+    "beta_values": [
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "n_runs": 10,
+    "train_threshold": 0.9
+  },
+  "by_beta": {
+    "1.0": {
+      "n_learned": 10,
+      "n_runs": 10,
+      "all_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.55308175",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.65349394",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6867659",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67999303",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.79848325",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.5,
+          "disentanglement": "0.6237736",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6356344",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.79066265",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.769101",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5585628",
+          "learned": true
+        }
+      ],
+      "successful_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.55308175",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.65349394",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6867659",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67999303",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.79848325",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.5,
+          "disentanglement": "0.6237736",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6356344",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.79066265",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.769101",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5585628",
+          "learned": true
+        }
+      ],
+      "summary": {
+        "train_acc_mean": 1.0,
+        "test_acc_mean": 0.05,
+        "disentanglement_mean": "0.67495525"
+      }
+    },
+    "1.25": {
+      "n_learned": 10,
+      "n_runs": 10,
+      "all_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5741343",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.66665727",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6245118",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5920289",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.75076085",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6457337",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.66596216",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.64518017",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.7569278",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6813686",
+          "learned": true
+        }
+      ],
+      "successful_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5741343",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.66665727",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6245118",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5920289",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.75076085",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6457337",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.66596216",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.64518017",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.7569278",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6813686",
+          "learned": true
+        }
+      ],
+      "summary": {
+        "train_acc_mean": 1.0,
+        "test_acc_mean": 0.0,
+        "disentanglement_mean": "0.6603266"
+      }
+    },
+    "1.5": {
+      "n_learned": 10,
+      "n_runs": 10,
+      "all_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5343148",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.702214",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.68105423",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6197394",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.5,
+          "disentanglement": "0.75197613",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67120206",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6877084",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.625576",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.7681219",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.57503664",
+          "learned": true
+        }
+      ],
+      "successful_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5343148",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.702214",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.68105423",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6197394",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.5,
+          "disentanglement": "0.75197613",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67120206",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6877084",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.625576",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.7681219",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.57503664",
+          "learned": true
+        }
+      ],
+      "summary": {
+        "train_acc_mean": 1.0,
+        "test_acc_mean": 0.05,
+        "disentanglement_mean": "0.66169435"
+      }
+    },
+    "1.75": {
+      "n_learned": 10,
+      "n_runs": 10,
+      "all_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5773177",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.69905114",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.68099767",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.5,
+          "disentanglement": "0.74982375",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.76094836",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.75075597",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.66089255",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6400263",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.75334406",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.69723254",
+          "learned": true
+        }
+      ],
+      "successful_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5773177",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.69905114",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.68099767",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.5,
+          "disentanglement": "0.74982375",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.76094836",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.75075597",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.66089255",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6400263",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.75334406",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.69723254",
+          "learned": true
+        }
+      ],
+      "summary": {
+        "train_acc_mean": 1.0,
+        "test_acc_mean": 0.05,
+        "disentanglement_mean": "0.697039"
+      }
+    },
+    "2.0": {
+      "n_learned": 10,
+      "n_runs": 10,
+      "all_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5851858",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.68471223",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6411351",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.73083943",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.7208135",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67918324",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6129831",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5911162",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67166585",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6907741",
+          "learned": true
+        }
+      ],
+      "successful_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5851858",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.68471223",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6411351",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.73083943",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.7208135",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67918324",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6129831",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5911162",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67166585",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6907741",
+          "learned": true
+        }
+      ],
+      "summary": {
+        "train_acc_mean": 1.0,
+        "test_acc_mean": 0.0,
+        "disentanglement_mean": "0.6608408"
+      }
+    },
+    "2.5": {
+      "n_learned": 10,
+      "n_runs": 10,
+      "all_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6376303",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6784204",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.64264923",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67887706",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5977617",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5907159",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6543031",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6408204",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.611245",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6334821",
+          "learned": true
+        }
+      ],
+      "successful_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6376303",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6784204",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.64264923",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.67887706",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5977617",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5907159",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6543031",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6408204",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.611245",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6334821",
+          "learned": true
+        }
+      ],
+      "summary": {
+        "train_acc_mean": 1.0,
+        "test_acc_mean": 0.0,
+        "disentanglement_mean": "0.63659054"
+      }
+    },
+    "3.0": {
+      "n_learned": 10,
+      "n_runs": 10,
+      "all_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5944195",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.72585064",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.61162496",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.64076746",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5953096",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.60154647",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.62368375",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.54492337",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.7043344",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6691039",
+          "learned": true
+        }
+      ],
+      "successful_runs": [
+        {
+          "run": 0,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5944195",
+          "learned": true
+        },
+        {
+          "run": 1,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.72585064",
+          "learned": true
+        },
+        {
+          "run": 2,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.61162496",
+          "learned": true
+        },
+        {
+          "run": 3,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.64076746",
+          "learned": true
+        },
+        {
+          "run": 4,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.5953096",
+          "learned": true
+        },
+        {
+          "run": 5,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.60154647",
+          "learned": true
+        },
+        {
+          "run": 6,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.62368375",
+          "learned": true
+        },
+        {
+          "run": 7,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.54492337",
+          "learned": true
+        },
+        {
+          "run": 8,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.7043344",
+          "learned": true
+        },
+        {
+          "run": 9,
+          "train_acc": 1.0,
+          "test_acc": 0.0,
+          "disentanglement": "0.6691039",
+          "learned": true
+        }
+      ],
+      "summary": {
+        "train_acc_mean": 1.0,
+        "test_acc_mean": 0.0,
+        "disentanglement_mean": "0.6311564"
+      }
+    }
+  }
+}

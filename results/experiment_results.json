@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "timestamp": "2025-12-09T03:07:23.644086",
+    "holdout": [
+      [
+        "blue",
+        "triangle"
+      ],
+      [
+        "green",
+        "circle"
+      ]
+    ],
+    "beta_values": [
+      1.0,
+      4.0
+    ],
+    "n_runs": 5,
+    "train_size": 7,
+    "test_size": 2
+  },
+  "runs": [
+    {
+      "beta": 1.0,
+      "individual_runs": [
+        {
+          "run": 0,
+          "train_accuracy": 1.0,
+          "test_accuracy": 0.0,
+          "generalization_gap": 1.0,
+          "final_loss": 0.6863800287246704,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.0007632279",
+              "0.45726597",
+              "0.58480394",
+              "0.65145826"
+            ],
+            "shape_variance": [
+              "0.007122997",
+              "0.431039",
+              "0.4661341",
+              "0.7852486"
+            ]
+          }
+        },
+        {
+          "run": 1,
+          "train_accuracy": 1.0,
+          "test_accuracy": 0.5,
+          "generalization_gap": 0.5,
+          "final_loss": 0.8845739364624023,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.0028390624",
+              "0.62905234",
+              "0.60060495",
+              "0.7882888"
+            ],
+            "shape_variance": [
+              "0.0025667143",
+              "0.16972554",
+              "0.5551637",
+              "0.8038914"
+            ]
+          }
+        },
+        {
+          "run": 2,
+          "train_accuracy": 1.0,
+          "test_accuracy": 0.0,
+          "generalization_gap": 1.0,
+          "final_loss": 0.7402957677841187,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.82808876",
+              "0.6637502",
+              "0.00026230764",
+              "0.00081653177"
+            ],
+            "shape_variance": [
+              "0.8752136",
+              "0.5011428",
+              "0.0029340454",
+              "0.0010013437"
+            ]
+          }
+        },
+        {
+          "run": 3,
+          "train_accuracy": 1.0,
+          "test_accuracy": 0.0,
+          "generalization_gap": 1.0,
+          "final_loss": 0.6757363080978394,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.7370817",
+              "0.8772526",
+              "0.009396625",
+              "0.0035150398"
+            ],
+            "shape_variance": [
+              "0.27651617",
+              "1.3129039",
+              "0.0005571419",
+              "0.0017923316"
+            ]
+          }
+        },
+        {
+          "run": 4,
+          "train_accuracy": 1.0,
+          "test_accuracy": 0.5,
+          "generalization_gap": 0.5,
+          "final_loss": 0.8341293334960938,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.2775075",
+              "0.10131222",
+              "0.77808857",
+              "1.2707514"
+            ],
+            "shape_variance": [
+              "0.89615697",
+              "0.53453827",
+              "0.07285956",
+              "0.38333428"
+            ]
+          }
+        }
+      ],
+      "summary": {
+        "train_accuracy_mean": 1.0,
+        "train_accuracy_std": 0.0,
+        "test_accuracy_mean": 0.2,
+        "test_accuracy_std": 0.24494897427831783,
+        "generalization_gap_mean": 0.8,
+        "generalization_gap_std": 0.2449489742783178
+      }
+    },
+    {
+      "beta": 4.0,
+      "individual_runs": [
+        {
+          "run": 0,
+          "train_accuracy": 0.7142857313156128,
+          "test_accuracy": 0.0,
+          "generalization_gap": 0.7142857313156128,
+          "final_loss": 1.9414067268371582,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.4867822",
+              "0.19196665",
+              "0.00096291566",
+              "0.05674844"
+            ],
+            "shape_variance": [
+              "0.28637254",
+              "0.102506794",
+              "0.0015196353",
+              "0.05029677"
+            ]
+          }
+        },
+        {
+          "run": 1,
+          "train_accuracy": 0.4285714328289032,
+          "test_accuracy": 0.0,
+          "generalization_gap": 0.4285714328289032,
+          "final_loss": 2.113718271255493,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "7.3928622e-06",
+              "8.364371e-05",
+              "0.00038796556",
+              "0.4464712"
+            ],
+            "shape_variance": [
+              "4.6165955e-05",
+              "8.040867e-06",
+              "0.0005949767",
+              "0.51352614"
+            ]
+          }
+        },
+        {
+          "run": 2,
+          "train_accuracy": 0.2857142984867096,
+          "test_accuracy": 0.0,
+          "generalization_gap": 0.2857142984867096,
+          "final_loss": 2.174941301345825,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.27202797",
+              "0.10743075",
+              "0.0017275577",
+              "0.014737171"
+            ],
+            "shape_variance": [
+              "0.28653476",
+              "0.12810586",
+              "0.0015185727",
+              "0.0133996755"
+            ]
+          }
+        },
+        {
+          "run": 3,
+          "train_accuracy": 0.2857142984867096,
+          "test_accuracy": 0.0,
+          "generalization_gap": 0.2857142984867096,
+          "final_loss": 2.169252395629883,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.093981534",
+              "0.029210368",
+              "0.21025695",
+              "0.058074325"
+            ],
+            "shape_variance": [
+              "0.044589546",
+              "0.0043127006",
+              "0.26584518",
+              "0.061541695"
+            ]
+          }
+        },
+        {
+          "run": 4,
+          "train_accuracy": 0.5714285969734192,
+          "test_accuracy": 0.0,
+          "generalization_gap": 0.5714285969734192,
+          "final_loss": 2.150526523590088,
+          "latent_analysis": {
+            "latent_dim": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "color_variance": [
+              "0.11212611",
+              "0.19600113",
+              "0.07267391",
+              "0.008571886"
+            ],
+            "shape_variance": [
+              "0.049058888",
+              "0.18585306",
+              "0.06383901",
+              "0.010027763"
+            ]
+          }
+        }
+      ],
+      "summary": {
+        "train_accuracy_mean": 0.4571428716182709,
+        "train_accuracy_std": 0.1665986289257027,
+        "test_accuracy_mean": 0.0,
+        "test_accuracy_std": 0.0,
+        "generalization_gap_mean": 0.4571428716182709,
+        "generalization_gap_std": 0.1665986289257027
+      }
+    }
+  ]
+}
