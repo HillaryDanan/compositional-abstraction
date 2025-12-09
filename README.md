@@ -89,7 +89,7 @@ Is compositionality binary or graded?
 2. Effect is robust to holdout size
 3. Effect scales to more factors
 4. Holistic architectures memorize; factorized architectures compose
-5. Compositionality may be binary — partial factorization yields unstable composition
+5. Compositionality may be binary (phase transition) rather than graded — partial factorization yields unstable, not partial, composition
 
 **Not yet tested**:
 - Whether systems can discover what to factorize (we forced it)
