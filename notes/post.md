@@ -158,4 +158,4 @@ Available at: https://github.com/HillaryDanan/compositional-abstraction
 
 ## Acknowledgments
 
-This work tests predictions from the Abstraction Primitive Hypothesis framework. See: https://github.com/HillaryDanan/abstraction-Intelligence
+This work tests predictions from the Abstraction Primitive Hypothesis framework. See: https://github.com/HillaryDanan/abstraction-intelligence
