@@ -30,7 +30,6 @@ import json
 import random
 from pathlib import Path
 from datetime import datetime
-from itertools import combinations
 
 
 # =============================================================================
@@ -63,17 +62,22 @@ def set_seed(seed):
     random.seed(seed)
 
 
-def create_compositional_holdout(all_compositions, n_holdout, factors_per_item, seed=SEED):
+def create_compositional_holdout(all_compositions, n_holdout, n_factors, seed=SEED):
     """
     Create a valid compositional holdout.
     
     Valid = each factor level appears in training at least once.
     This ensures test items are truly NOVEL COMPOSITIONS, not novel factors.
+    
+    Args:
+        all_compositions: list of tuples, each tuple has n_factors elements
+        n_holdout: number of compositions to hold out
+        n_factors: number of factors (2 for color+shape, 3 for color+shape+size)
+        seed: random seed
     """
     random.seed(seed)
     
     # Extract unique levels for each factor
-    n_factors = len(factors_per_item)
     factor_levels = [set() for _ in range(n_factors)]
     for item in all_compositions:
         for i, level in enumerate(item):
@@ -360,6 +364,8 @@ class PartialFactorizedAE2(nn.Module):
                 nn.ReLU(),
                 nn.Linear(hidden_dim, shared_dim)
             )
+        else:
+            self.shared_encoder = None
         
         # Factor-specific encoders
         if factor_dim > 0:
@@ -373,6 +379,9 @@ class PartialFactorizedAE2(nn.Module):
                 nn.ReLU(),
                 nn.Linear(hidden_dim, factor_dim)
             )
+        else:
+            self.color_encoder = None
+            self.shape_encoder = None
         
         # Decoders use appropriate latent portions
         total_for_color = shared_dim + factor_dim
@@ -397,14 +406,14 @@ class PartialFactorizedAE2(nn.Module):
         latent_parts_shape = []
         
         # Shared latent (sees both inputs)
-        if self.shared_dim > 0:
+        if self.shared_dim > 0 and self.shared_encoder is not None:
             combined = torch.cat([e_color, e_shape], dim=-1)
             z_shared = self.shared_encoder(combined)
             latent_parts_color.append(z_shared)
             latent_parts_shape.append(z_shared)
         
         # Factor-specific latents
-        if self.factor_dim > 0:
+        if self.factor_dim > 0 and self.color_encoder is not None:
             z_color = self.color_encoder(e_color)
             z_shape = self.shape_encoder(e_shape)
             latent_parts_color.append(z_color)
@@ -505,7 +514,7 @@ def run_study1():
             
             train, test = create_compositional_holdout(
                 all_compositions, n_holdout, 
-                factors_per_item=2, 
+                n_factors=2, 
                 seed=SEED + run + n_holdout * 100
             )
             
@@ -578,7 +587,7 @@ def run_study2():
         
         train, test = create_compositional_holdout(
             all_compositions, 12, 
-            factors_per_item=3,
+            n_factors=3,
             seed=SEED + run
         )
         
@@ -660,7 +669,7 @@ def run_study3():
             
             train, test = create_compositional_holdout(
                 all_compositions, 2,
-                factors_per_item=2,
+                n_factors=2,
                 seed=SEED + run
             )
             
